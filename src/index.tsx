@@ -8,6 +8,7 @@ import App from './App';
 import { ContextProvider } from './context/Provider';
 import './index.css';
 import Home from './pages/Home';
+import Notfound from './pages/Notfound';
 import Planet from './pages/Planet';
 import WishlistPlanets from './pages/WishlistPlanets';
 import reportWebVitals from './reportWebVitals';
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
         <Route index element={<Home />} />
         <Route element={<Planet />} path={`planet/:id/:created`} />
         <Route element={<WishlistPlanets />} path={`wishlist`} />
+        <Route element={<Notfound />} path={`*`} />
       </Route>
     </>
   )

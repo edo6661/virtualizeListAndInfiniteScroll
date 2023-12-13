@@ -188,3 +188,9 @@ export const ContainerPagination = styled.div`
 	gap: 0.5rem;
 	flex-wrap: wrap;
 `;
+
+export const NotFound = styled.h2`
+	text-align: center;
+	${spaceX}
+	${spaceY}
+`;
