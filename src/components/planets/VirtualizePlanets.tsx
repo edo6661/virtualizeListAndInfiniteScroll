@@ -38,8 +38,6 @@ const VirtualizePlanets = ({ width, height, allPlanets, hasNextPage, isFetchingN
             rowCount={allPlanets.length}
             rowRenderer={rowRenderer}
             onRowsRendered={({ overscanStopIndex }) => {
-                console.log("stop" + overscanStopIndex)
-                console.log('length planet' + allPlanets.length)
                 if (overscanStopIndex >= allPlanets.length - 1 && hasNextPage && !isFetchingNextPage) {
                     nextPage();
                 }
