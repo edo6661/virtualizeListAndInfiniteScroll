@@ -13,9 +13,8 @@ export const ContextProvider = ({ children }: Props) => {
     const key = 'wishlist'
 
     useEffect(() => {
-        setWishlist(JSON.parse(window.localStorage.getItem(key) ?? ''))
+        setWishlist(JSON.parse(window.localStorage.getItem(key) ?? '[]'))
     }, [])
-
     useEffect(() => {
         window.localStorage.setItem(key, JSON.stringify(wishlist))
     }, [wishlist])
