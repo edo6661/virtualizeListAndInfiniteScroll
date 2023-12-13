@@ -28,9 +28,11 @@ const Wishlist = ({ ids, deleteById }: Props) => {
                         <DetailsImage src={randomImages} alt={planet?.name} />
                     </Link>
                     <DetailsTitle >{planet?.name}</DetailsTitle>
-                    <Button $primary onClick={() => deleteById(ids)}>Delete</Button>
+                    <Button $primary onClick={() => deleteById(ids)} style={{ width: '100%' }}>Delete</Button>
                 </Details>
             )}
+
+
         </article>
     )
 }

@@ -172,8 +172,19 @@ export const DetailsImage = styled.img`
 	height: 186px;
 	width: 186px;
 	border-radius: 0.75rem;
+	${hovered}
 `;
 
 export const DetailsTitle = styled.p`
 	${title}
+`;
+
+export const ContainerPagination = styled.div`
+	grid-column: 1 / -1;
+	margin-top: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	flex-wrap: wrap;
 `;
